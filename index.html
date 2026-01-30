@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amalbiju official Website</title><!-- Internal CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><!-- Navigation bar -->
+
+<!-- Certificate Modal -->  
+<div class="modal" id="imgModal" onclick="closeModal()">
+    <span>&times;</span>
+    <img id="modalImg">
+</div>
+
+
+
+<!-- Calculator Modal -->
+<div class="modal" id="calcModal">
+    <span onclick="closeCalculator()">&times;</span>
+    <iframe src="calculator.html"></iframe>
+</div>
+
+<nav>
+    <h2>PORTFOLIO</h2>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main content -->
+<div class="main">
+    <!-- Profile Photo -->
+    <img src="images/profile.jpeg" alt="AMAL BIJU" class="profile-photo">
+    <h2>
+  Hi, I'm <span class="playwrite-cu-guides-regular">AMAL BIJU</span>
+</h2>
+
+    <p class="hero-subtitle">Web Developer</p>
+
+    <p>I build simple and beautiful website</p>
+    
+</div>
+
+
+
+
+
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a creative and passionate web developer who loves building modern, 
+        responsive, and visually appealing websites. I focus on clean design, 
+        smooth animations, and user-friendly experiences. I constantly explore 
+        new technologies to improve my skills and deliver high-quality results.
+    </p>
+</section>
+
+
+<section class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill-box">PYTHON / SQL</div>
+        <div class="skill-box">HTML / CSS</div>
+        <div class="skill-box">C / Java</div>
+        <div class="skill-box">Responsive Design</div>
+        <div class="skill-box">UI / UX Basics</div>
+        <div class="skill-box">GitHub</div>
+    </div>
+</section>
+
+
+<section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                A modern space-themed portfolio website with glowing effects,
+                animations, and responsive layout.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Landing Page</h3>
+            <p>
+                A clean and responsive landing page optimized for performance
+                and user engagement.
+            </p>
+        </div>
+
+	<div class="project-card" onclick="toggleCertificates()" style="cursor:pointer;">
+    <h3>Certificate Showcase</h3>
+    <p>
+	  A professional certificate display page with modern card design
+                and smooth hover effects.
+        <br><b>Tap to view my certificates</b> 
+    </p>
+</div>
+
+
+
+
+<div class="project-card" onclick="openCalculator()" style="cursor:pointer;">
+    <h3>Calculator</h3>
+    <p>
+        A clean and responsive calculator with normal, scientific,
+        and CGPA calculation modes.
+        <br><b>Tap to open</b>
+    </p>
+</div>
+
+        
+
+<div class="project-card" onclick="toggleResume()" style="cursor:pointer;">
+    <h3>Resume</h3>
+    <p>
+        View my professional resume with skills, projects, and education.
+        <br><b>Tap to view resume</b>
+    </p>
+</div>
+
+
+
+
+
+    </div>
+</section>
+<section class="section" id="certificates" style="display:none;">
+    <h2>My Certificates</h2>
+
+    <div class="projects">
+        <div class="project-card">
+
+            <div>
+                <img src="images/Untitled design (3).png" alt="Certificate" onclick="openModal(this)">
+                <p>Web Design Certificate</p>
+            </div>
+
+            <div>
+                <img src="images/YIP_Certificate_Amal biju_1148651.png" alt="Certificate" onclick="openModal(this)">
+                <p>YIP Certificate</p>
+            </div>
+
+            <div>
+                <img src="images/INTERSHIP REG AMAL BIJU(1)-1.png" alt="Certificate" onclick="openModal(this)">
+                <p>Web Dev Internship</p>
+            </div>
+
+            <div>
+                <img src="/images/Amal biju-Certificate.png" alt="Certificate" onclick="openModal(this)">
+                <p>Training Certificate</p>
+            </div>
+            
+
+            <div>
+                <img src="/images/" alt="Certificate" onclick="openModal(this)">
+                <p>Arduino Training Certificate</p>
+            </div>
+            
+            <div>
+                <img src="Amal Biju-1.png" alt="Certificate" onclick="openModal(this)">
+                <p>Participation Certificate</p>
+            </div>
+
+            <div>
+                <img src="Amal biju.png" alt="Certificate" onclick="openModal(this)">
+                <p>Web Design Certificate</p>
+            </div>
+
+            <div>
+                <img src="INTERSHIP REG AMAL BIJU(1)-1.png" alt="Certificate" onclick="openModal(this)">
+                <p>Internship Registration</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="section" id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>
+        I’m open to freelance projects, collaborations, and learning opportunities.
+  <div class="contact-details" id="contactBox">
+    <p><span>Email:</span> <a href="mailto:0amalbiju0@gmail.com">0amalbiju0@gmail.com</a></p>
+    <p><span>Phone:</span> <a href="tel:+919447284643">+91 9447284643</a></p>
+    <p><span>Location:</span> India</p>
+    <p><span>Instagram:a_mal_biju</span> 
+        <a href="https://instagram.com/a_mal_biju" target="_blank">@a_mal_biju</a>
+    </p>
+</div>
+      Let’s create something amazing together.
+    </p>
+    <button class="contact-btn" onclick="toggleContact()">Contact Me</button>
+
+
+
+</section>
+
+
+<section id="resume" class="resume-section" style="display:none;">
+
+  <h2 class="section-title">My Resume</h2>
+
+  <div class="resume-card">
+    <h1 class="name">Amal <span>Biju</span></h1>
+    <p class="role">Web Developer | Frontend Designer</p>
+
+    <div class="resume-info">
+      <p>📍 India</p>
+      <p>📧 0amalbiju0@gmail.com</p>
+      <p>📱 +91-9447284643</p>
+      <p>🌐 yourwebsite.com</p>
+    </div>
+
+    <div class="resume-block">
+      <h3>Professional Summary</h3>
+      <p>
+        Creative and detail-oriented Web Developer with a passion for building
+        modern, responsive, and user-friendly websites. Focused on clean design,
+        smooth animations, and performance-driven development.
+      </p>
+    </div>
+
+    <div class="resume-block">
+      <h3>Technical Skills</h3>
+      <ul class="skills">
+        <li>HTML</li>
+	<li>CSS</li>
+	<li>SQL</li>
+        <li>PYTHON</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="resume-block">
+      <h3>Projects</h3>
+      <ul>
+        <li><strong>Personal Portfolio Website</strong> – Responsive, animated, modern UI</li>
+        <li><strong>Calculator Website</strong> – SGPA & CGPA calculator with clean design</li>
+        <li><strong>Certificate Showcase</strong> – Mobile-friendly grid layout</li>
+      </ul>
+    </div>
+
+    <div class="resume-block">
+      <h3>Education</h3>
+      <p><strong> Degree in BCA</strong><br>
+      KJCMT (2024 – 2028)</p>
+    </div>
+
+    <div class="resume-block">
+      <h3>Career Objective</h3>
+      <p>
+        To obtain a challenging role as a Web Developer where I can apply my
+        skills, grow professionally, and contribute to impactful digital projects.
+      </p>
+    </div>
+
+    <p class="declaration">
+      I hereby declare that the above information is true to the best of my knowledge.
+    </p>
+
+    <p class="signature">— Amal Biju</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <p>© since 2005 | AMAL BIJU</p>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
